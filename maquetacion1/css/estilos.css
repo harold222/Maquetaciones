@@ -1,0 +1,84 @@
+*{ /* reset universal para la */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+header img{
+    width: 150px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+nav{
+    background: rgb(41, 69, 197);
+    text-align: center;
+    padding: 7px;
+    border: 1px solid black;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+nav a:hover{
+    animation-direction: alternate-reverse;
+    background: rgb(5, 15, 59);
+    color: rgba(240, 75, 75, 0.411);
+}
+
+section{
+    width: 59%;
+    height: auto; /* de forma proporcional a la pagina */
+    float:left;
+    padding: 5px;
+    /* margin: 0 0.3em 0 0.3em;arriba, derecha, abajo y  izquierda */
+}
+
+section article{
+    border: 1px solid silver;
+    margin-top: 8px;
+}
+
+article p{
+    padding: 3px;
+    text-align: justify;
+}
+
+aside{
+    width: 39%;
+    height: auto; /* de forma proporcional a la pagina */
+    float: left;
+    padding: 3px;
+    margin-top: 12px;
+    background-color: rgba(170, 165, 165, 0.39);
+    border: 1px solid silver;
+}
+
+aside p{
+    padding: 5px;
+    text-align: right;
+}
+
+footer{
+    width: 100%;
+    background: rgb(41, 69, 197);
+    float: left;
+    text-align: center;
+    padding: 1em 0 1em 0;
+    position: fixed;/* va a tener siempre una posicion fija*/
+    bottom: 0; /* con esto lo ubico abajo, ya que en psocion de abajo no tendra nada */
+}
+
+footer p{
+    color: #FFF;
+    font-size: 14px;
+}

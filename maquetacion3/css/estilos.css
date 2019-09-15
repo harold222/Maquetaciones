@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: rgb(165, 160, 160);
+    text-align: center;
+}
+
+header, nav, section, aside, footer{
+    background-color: rgb(219, 235, 163);
+    border: 1px solid #f7f7f7;
+    height: 200px; /* Me ocupara 600px en total */
+    padding-top: 2em;
+}
+
+@media (max-width: 420px){
+    header, nav, section, footer{
+        height: 100px;
+    }
+
+    aside{
+        display: none; /* Lo escondo */
+    }
+
+    nav{
+        order: 1; /* Cambio de posicion */
+    }
+
+    header{
+        order: 2;
+    }
+
+    section{
+        order: 3;
+    }
+
+    footer{
+        order: 4;
+    }
+}

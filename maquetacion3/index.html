@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercisio 3-responsive</title>
+    <meta name="author" content="Harold Pedraza">
+    <meta name="description" content="Ejercisio de maquetacion con HTML y CSS">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/flexboxgrid.css"><!-- llamo el archivo flexbox de su libreria -->
+</head>
+<body>
+    <!-- El objetivo de esta diseño es que existiran 5 contenedores
+        header, section, 2 aside y footer, lo que queremos es que dependiendo de los
+        pixeles cambie la posicion de cada uno de estos elementos    
+    -->
+
+    <div class="row center-xs"> <!-- Necesario para el flexbox de la libreria, y lo centro -->
+        <header class="col-xs-12 col-md-12">Header</header>
+        <nav class="col-xs-12 col-md-2">Nav</nav><!-- Tamaño de columnas para cada uno -->
+        <section class="col-xs-12 col-md-8">Usando libreria flexbox-grid</section>
+        <aside class="col-xs-12 col-md-2">Aside</aside>
+        <footer class="col-xs-12 col-md-12">Footer</footer>
+    </div>
+
+</body>
+</html>
