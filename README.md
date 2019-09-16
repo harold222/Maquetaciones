@@ -27,4 +27,4 @@ _Proyectos realizados con_
 ## Autores ✒️
 
 
-* **Harold Pedraza** - *Trabajo completo* - [villanuevand](https://github.com/harold222)
+* **Harold Pedraza** - *Trabajo completo* - [perfil](https://github.com/harold222)
