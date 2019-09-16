@@ -1,0 +1,50 @@
+nav{
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex; /* para que se posicione una al lado de la otra */
+    justify-content: center; /* posiciono las cajas en el centro */
+}
+
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 17px;
+    margin-left: 5px;/* espaciado entre cada uno */
+}
+
+.nav-enlace:hover{
+    background: rosybrown;
+    font-size: 21px;
+}
+
+.boton{
+    background: salmon;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 5px;
+    border: 2px solid white;
+    display: none; /* oculto el boton en vista normal */
+}
+
+@media (max-width: 600px){/* Cuando alcanze este tamaño */
+    nav{
+        flex-direction: column; /* Posiciono en columna */
+    }
+
+    .nav-enlace{
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+
+    .boton{
+        display: inline-block; /* aparece el boton en dicho tamaño */
+    }
+
+    .desaparece{
+        display: none;
+    }
+}

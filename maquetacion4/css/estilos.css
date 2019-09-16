@@ -1,0 +1,49 @@
+nav{
+    background: rgb(238, 175, 175);    
+    padding: 18px;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 7px;
+    font-size: 20px;
+}
+
+.padre{
+    display: flex;
+}
+
+.columna{
+    background: rgb(49, 49, 49);
+    color: white;
+    padding: 10px;
+    width: 25%;
+    margin: 10px;
+    text-align: center;
+}
+
+button{
+    background: rgba(113, 196, 36, 0.705);
+    color: white;
+    width:90px;
+    margin: 10px;
+    border: 1px solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+    font-weight: unset;
+    transition: all 0.5s;
+}
+
+button:hover{
+    background: rgb(77, 153, 6);
+    font-size: 25px;
+}
+
+button:active{
+    padding: 7px;
+    background: rgb(3, 5, 0);
+    box-shadow:5px 5px 5px 5px rgb(133, 3, 3);
+    border-radius: 10px;
+}
