@@ -1,0 +1,82 @@
+*{
+    background: rgb(226, 242, 247);
+    font-family: 'Lato', sans-serif;
+}
+.contenedor{
+    display: flex;/* uno al lado del otro */
+    flex-wrap: wrap;/* Que me ocupe el total del tamaño */
+    width: 90%;
+    text-align: center;/* Todo alineado */
+    margin: 0 auto;
+}
+
+.columna{
+    width: 24%;/* Coloco un tamaño establecido para el responsive */
+
+    box-sizing: border-box;
+    margin: 0 auto; /* Utilizo estas dos en combinacion apra el espaciado */
+
+    -webkit-box-shadow: 11px 17px 12px -5px rgba(105,102,105,0.72);
+    -moz-box-shadow: 11px 17px 12px -5px rgba(105,102,105,0.72);/* Sombras a las cajas */
+    box-shadow: 11px 17px 12px -5px rgba(105,102,105,0.72);/* derecho, valor inferior, degradado de 12*/
+    background: rgb(228,228,228);
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 2px solid black;
+    
+    padding: 10px;
+}
+
+.columna h2{
+    background: rgb(228,228,228);
+    margin-top: 15px;
+}
+
+.contenedor .columna p{
+    background: rgb(228,228,228);
+    margin: 10px;
+}
+
+.precio{
+    background: rgb(228,228,228);
+    color: rgb(117, 214, 238);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+hr{
+    border: 1px solid black;
+    margin: 15px;
+}
+
+.btn-boton{
+    display: block;/* ancho el boton */
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background: rgba(224, 91, 91, 0.74);
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.btn-boton:hover{
+    background: rgba(235, 26, 26, 0.808);
+    font-size: 21px;
+}
+
+@media (max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 600px){
+    .columna{
+        width: 92%;
+    }
+}
+
