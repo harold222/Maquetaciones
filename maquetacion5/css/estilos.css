@@ -1,0 +1,126 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;/* Para que las cajas no se desborden con otras */
+
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;/* columnas y que se adapte egun el tamaño establecido*/
+}
+
+.header, .section, .footer{/* 3 contenedores hijos */
+    background: #000;
+}
+
+.header{
+    display: flex;/* al lado del otro */
+    flex-flow: column nowrap;
+}
+
+.menu{
+    background: rgb(79, 95, 126);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;/* Centro sus 3 contenedores hijos */
+}
+
+.logo, .nav, .social{
+    background: rgba(240, 148, 148, 0.774);
+    height: 30px;
+}
+
+.logo{
+    flex: 1 1 auto;
+}
+
+.nav{
+    flex: 5 1 auto;/* Sera mas grande que los demas */
+}
+
+.social{
+    flex: 1 1 auto;
+}
+
+.texto-principal{
+    background: #f07b3f;
+}
+
+.texto-principal h1{
+    background: rgb(243, 228, 93);
+}
+
+.section{
+    display: flex;
+}
+
+.articulos{
+    background: rgb(207, 140, 224);
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;/* Si el contenedor no alcanza pasa hacia abajo */
+}
+
+.article{
+    background: rgb(142, 196, 247);
+    flex: 1 1 40%;
+}
+
+.navegacion{
+    background: rgb(174, 198, 235);
+    flex: 1 1 100%;/* total del ancho */
+}
+
+.aside{
+    background: rgb(236, 182, 238);
+    flex: 1 1 auto;
+}
+
+.publicidad{
+    background: rgb(243, 228, 93);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.pie{
+    background: rgb(132, 219, 139);
+    width: 300px;
+}
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;/* Paso esta parte abajo de los articulos */
+    }
+
+    .menu{
+        flex-direction: column;
+        height: auto;/* Lo adapto al contenedor */
+    }
+
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;/* uno debajo del otro */
+    }
+}
+
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
+
+
+
+
+

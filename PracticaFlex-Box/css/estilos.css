@@ -1,0 +1,33 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: #ff5b29a6;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row-reverse;/* Los posiciono al revez */
+    flex-wrap: wrap;/* Respeta el ancho dado a los hijos */
+    justify-content: center;/* Posiciona al centro */
+    align-items: center;/* Posiciona al centro total del contenedor */
+    align-content: space-around;/* Solo sirve si existen dos lineas o mas */
+}
+
+.hijo{
+    background: #00b28594;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    flex: 1 1 auto;/* ocupan 100% del ancho*/
+}
