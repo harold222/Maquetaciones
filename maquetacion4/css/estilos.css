@@ -1,21 +1,21 @@
-nav{
-    background: rgb(238, 175, 175);    
+nav {
+    background: rgb(238, 175, 175);
     padding: 18px;
     text-align: center;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: white;
     margin: 7px;
     font-size: 20px;
 }
 
-.padre{
+.padre {
     display: flex;
 }
 
-.columna{
+.columna {
     background: rgb(49, 49, 49);
     color: white;
     padding: 10px;
@@ -24,10 +24,10 @@ nav a{
     text-align: center;
 }
 
-button{
+button {
     background: rgba(113, 196, 36, 0.705);
     color: white;
-    width:90px;
+    width: 90px;
     margin: 10px;
     border: 1px solid black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -36,14 +36,14 @@ button{
     transition: all 0.5s;
 }
 
-button:hover{
+button:hover {
     background: rgb(77, 153, 6);
     font-size: 25px;
 }
 
-button:active{
+button:active {
     padding: 7px;
     background: rgb(3, 5, 0);
-    box-shadow:5px 5px 5px 5px rgb(133, 3, 3);
+    box-shadow: 5px 5px 5px 5px rgb(133, 3, 3);
     border-radius: 10px;
 }
