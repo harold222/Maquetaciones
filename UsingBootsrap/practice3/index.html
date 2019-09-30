@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- 
+        m = margin
+        p = padding  
+        t = top
+        b = bottom
+        l = left
+        r = right
+        x = referencia al eje de izquierda y derecha al mismo tiempo
+        y = referencia al eje de arriba y abajo al mismo tiempo
+
+        ejemplo= m + t = margin top mt-0
+                 m + l = margin left ml-1
+                 p + b = padding bottom pb-2
+
+        esto sumado a espaciados como 0, 1, 2, 3, 4, 5, auto
+     -->
+
+    <div>
+        <h1 class="text-center">Padding, margenes y espaciados</h1><br>
+        
+        <h3 class="text-center">Margin:</h3>
+        <h4 class="bg-primary mb-4">hello</h4>
+        <h4 class="bg-primary ml-4">hello</h4>
+        <h4 class="bg-primary mr-4">hello</h4>
+        <h4 class="bg-primary mt-4">hello</h4>
+        <br>
+        
+        <h3 class="text-center">Padding:</h3>
+        <h4 class="bg-success pb-5">hello</h4>
+        <h4 class="bg-success pl-5">hello</h4>
+        <h4 class="bg-success pr-5">hello</h4>
+        <h4 class="bg-success pt-5">hello</h4><hr>
+        
+        <h3 class="text-center">Espaciados:</h3>
+        <h4 class="text-center">Margin <span class="mx-5">a los dos</span> lados</h4>
+
+    </div>
+
+    <div>
+        <hr><h1 class="text-center">Altos y anchos</h1>
+        <div class="bg-success p-3 w-25">
+            ancho 25%<!-- Con la w-(tamaño en porcentaje) -->
+        </div>
+
+        <div class="bg-success p-3 w-50">
+            ancho 50%
+        </div>
+
+        <div class="bg-success p-3 w-75">
+            ancho 75%
+        </div>
+
+        <div class="bg-success p-3 w-100">
+            ancho 100%
+        </div><hr>
+
+        <div class="bg-primary" style="border: 2px solid black; height: 300px;">   
+
+            <div class="bg-success d-inline-block text-light h-25">
+                alto 25%
+            </div>
+
+            <div class="bg-success d-inline-block text-light h-50">
+                alto 50%
+            </div> 
+
+            <div class="bg-success d-inline-block text-light h-75">
+                alto 75%
+            </div>
+
+            <div class="bg-success d-inline-block text-light h-100">
+                alto 100%
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+
+</body>
+</html>
