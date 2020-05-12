@@ -1,0 +1,23 @@
+/*
+----------Estilos generales----------
+*/
+
+/*
+----------Paleta de colores----------
+*/
+
+/*
+----------Particulares----------
+*/
+
+@import "common";
+@import "colors";
+
+html, body{
+    margin: 0px;
+}
+
+.workshop-background{
+    background: linear-gradient(to bottom, #6d7783 0%, #49505a 100%);
+    padding-bottom: 100px;
+}
