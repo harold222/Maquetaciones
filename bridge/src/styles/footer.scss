@@ -1,0 +1,24 @@
+@import '_mixins';
+
+footer{
+    background-color: rgb(54, 54, 54);
+    width: 100%;
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+
+        @include telefono{
+            flex-direction: row;
+            flex: 1;
+            background-color: red;
+        }        
+        
+    }
+
+    p{
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }
+}

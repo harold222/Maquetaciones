@@ -1,0 +1,97 @@
+@import '_mixins';
+
+.contain{
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    background-image: url(https://bridge120.qodeinteractive.com/wp-content/uploads/2017/11/home-slideri-image-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background-color: rgba(95, 90, 90, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 60px;
+    text-transform: uppercase;
+
+    position: fixed;
+    top: 0;
+
+    .lgoPcp{
+        align-content: flex-start;
+    }
+
+    @include telefono{
+        flex-direction: row;
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    @include pc{
+        justify-content: space-between;
+    }
+    
+    .navegacion{
+        
+        display: flex;
+        flex-direction: column;
+
+        @include tablet{
+            flex-direction: row;
+        }
+        
+        li{
+            font-size: 19px;
+            list-style: none;
+            padding: 8px 3px;
+            color: white;
+    
+            @include pc{
+                padding: 8px 13px;
+            }
+            
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 17px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+    
+            .active{
+                color: $amarillo;
+            }
+        }
+    }
+}
+
+.btns{
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    display: inline-block;
+    margin-bottom: 15px;
+
+    .btn.uno{
+        @include buttonStyle(160px, #fff, #000);
+
+        h5{
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .info{
+            font-size: 11px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .btn.dos{
+        @include buttonStyle(160px, $rosado, #fff);
+    }
+}
