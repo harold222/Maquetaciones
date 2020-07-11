@@ -1,0 +1,48 @@
+*{
+    /* Elimino margenes y padding por defecto */
+    margin: 0; 
+    padding: 0;
+    /* Cambio modelo de caja */
+    box-sizing: border-box;
+    /* elimino posible scroll horizontal */
+    /* overflow-x: hidden; */
+}
+
+/* Importo las fuentes proporcioandas en el descargable, tambien
+las podria utilziar de google fonts */
+@font-face {font-family: 'raleway-black';src: url('../fonts/Raleway-Black.ttf');}
+@font-face {font-family: 'raleway-bold';src: url('../fonts/Raleway-Bold.ttf');}
+@font-face {font-family: 'raleway-italic';src: url('../fonts/Raleway-Italic.ttf');}
+@font-face {font-family: 'raleway-light';src: url('../fonts/Raleway-Light.ttf');}
+@font-face {font-family: 'raleway-medium';src: url('../fonts/Raleway-Medium.ttf');}
+@font-face {font-family: 'raleway-regular';src: url('../fonts/Raleway-Regular.ttf');}
+@font-face {font-family: 'raleway-semibold';src: url('../fonts/Raleway-SemiBold.ttf');}
+
+/* Creo clases propias de esas funtes para ser llamadas con mas facilidad */
+.FontBlack{ font-family: raleway-black;}
+.FontBold{font-family: raleway-bold;}
+.FontItalic{font-family: raleway-italic;}
+.FontLight{font-family: raleway-light;}
+.FontMedium{font-family: raleway-medium;}
+.FontRegular{font-family: raleway-regular;}
+.FontSemiBold{font-family: raleway-semibold;}
+
+.textNormal{ /* Elimino los uppercase o lowercase*/
+    text-transform: none;
+}
+
+.font-20{
+    font-size: 20px;
+}
+
+.font-18{
+    font-size: 18px;
+}
+
+.container-fluid{
+    /* Elimino los espacion del contenedor de bootstrap pra que tome toda la ventana */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+

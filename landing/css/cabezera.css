@@ -1,0 +1,258 @@
+/* --------------------PARTE SUPERIOR----------------------- */
+
+.fondoFachada{
+    /* total de la ventana de alto */
+    height: 100vh;
+    /* escondo el sobrante de la imagen */
+    overflow: hidden;
+    /* posiciono detras de los elementos */
+    z-index: -1;
+}
+
+.imagenFondo{
+    /* Subo la imagen para tener una correcta visualizacion */
+    margin-top: -150px;
+    margin-left: -5px;
+    /* le doy el tamaño total del contenedor */
+    width: 100vw;
+    /* incremento el nacho para dar a la medida necesaria */
+    height: 125%;
+    filter: contrast(90%);
+}
+
+.caja-blanca{
+    /* brindo el tamaño de la caja superior del logo con el tamaño de illustrator */
+    width: 219.289px;
+    height: 180.992px;
+    /* fondo color blanco */
+    background-color: #ffffff;
+    /* para poder moverlo libremente */
+    position: absolute;
+    /* lo mantendo en la parte superior */
+    top:0;
+    /* posiciono al centro de la pagina */
+    left: 42.2%;
+}
+
+.logoDefault{
+    /* centro la imagen en el contenedor blanco */
+    display:block;
+    margin:auto;
+    margin-top: 35px;
+}
+
+.caja-azul{
+    width: 708.55px;
+    height: 231px;
+    /* color segun el indicado en illustrator */
+    background-color: rgba(0, 75, 128, 0.815);
+    /* bordeo el contenedor */
+    border-radius: 15px;
+    position: absolute;
+    /* subo al tamaño deseado */
+    top: 43%;
+    /* utilizo un filtro para que tome el estilo de la imagen */
+    filter: contrast(100%);
+}
+
+.caja-azul img{
+    /*posiciono el logo de company */
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.textoPrincipal{
+    /* doy estilos al texto */
+    color: #ffffff;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 16%;
+    left: 27.5%;
+    /* Elimino las viñetas de cada item */
+    list-style: none;
+}
+
+.textoPrincipal li span{
+    /* cada texto comparte estas clases */
+    background-color: #FAD3D5;
+    padding: 0 3px;
+}
+
+.textoPrincipal li:first-child{
+    /* utilizo pseudo selector para cada li, cambiando asi su tamaño */
+    font-size: 22px;
+}
+
+.textoPrincipal li:nth-child(2){
+    margin-top: -12px;
+    font-size: 28px;
+}
+
+.textoPrincipal li:nth-child(3){
+    margin-top: -18px;
+    font-size: 45px;
+}
+
+.textoPrincipal li:last-child{
+    background-color: #0084B1;
+    padding: 0 8px;
+    padding-right: 25px;
+    margin-top: -15px;
+    margin-left: 80px;
+}
+
+.textoPrincipal li:last-child span:first-child{
+    font-size: 18px;
+    /* para que alinie el color rosado con el otro texto */
+    padding: 1px 0;
+}
+.textoPrincipal li:last-child span:last-child{
+    color: #FFCC00;
+    font-size: 22px;
+}
+
+.botonPrincipal{
+    position: absolute;
+    background-color: #B62122;
+    border: 0px;
+    color: white;
+    padding: 4px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+
+    top: 77%;
+    left: 72%;
+}
+
+.emojiFiesta{
+    position: absolute;
+    top: -20%;
+    left: 83%;
+    z-index: 1;
+}
+
+/* video de youtube-------------- */
+.fondoFachada iframe{
+    position: absolute;
+    top: 38%;
+    right: 2.5%;
+
+    border-radius: 15px;
+}
+
+/* parte barra gris------------- */
+.contenedorLateral{
+    margin-top: 5px !important;
+}
+
+.contenedorLateral{
+    background-color: #727276;
+    overflow-y: hidden;
+    width: 100%;
+    height: 104px;
+}
+
+.tamañofila{
+    width: 99.88vw;
+}
+
+.contenedorLateral p{
+    color: white;
+}
+
+.seccion_de_apps p{
+    margin-left: -55px;
+    padding-right: 7px;
+}
+
+.contenedorLateral .barraLateral .logosApssUbicar{
+    width: 129px;
+    height: 60px;
+
+    display: inline-block;
+}
+
+.contenedorLateral .barraLateral .logosApssUbicar a img{
+    width: 48%;
+    transition: all 0.3s;
+}
+
+.contenedorLateral .barraLateral .logosApssUbicar a img:hover{
+    width: 45%;
+    filter: brightness(70%);
+}
+
+
+.contenedorLateral .barraLateral .logosApssUbicar .imagenMaps{
+    position: absolute;
+    margin-top: -4px;
+    padding-left: 2px;
+}
+
+/* --------------------FIN PARTE SUPERIOR----------------------- */
+
+/* --------------------Responsive Design----------------------- */
+@media screen and (min-width:1650px) {
+    .fondoFachada iframe{
+        width: 40%;
+        height: 350px;
+    }
+
+    .caja-azul{
+        width: 40%;
+        height: 310px;
+        top: 39%;
+
+    }
+
+    .caja-azul img{
+        margin-top: 37px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .caja-azul{
+        width: 75%;
+        height: 220px;
+        top: 33%;
+    }
+
+    .fondoFachada iframe{
+        top: 67%;
+        left: 0;
+        width: 50%;
+        height: 32%;
+    }
+    
+    .contenedorLateral .barraLateral .logosApssUbicar{
+        width: 120px;
+    }
+    
+    .contenedorLateral .barraLateral .logosApssUbicar a img{
+        width: 43%;
+    }
+
+    .contenedorLateral .barraLateral .logosApssUbicar .imagenMaps{
+        margin-top: 0px;
+    }
+}
+
+/* responsive en el alto */
+
+@media screen and (min-height:900px) {
+    .imagenFondo{
+        margin-top: -200px !important;
+    }
+}
+
+@media screen and (min-height:750px) {
+    .imagenFondo{
+        margin-top: -180px;
+    }
+}
+
+
+/* --------------------Fin Responsive Design----------------------- */

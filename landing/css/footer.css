@@ -1,0 +1,72 @@
+.contenedorFooter{
+    overflow-y: visible;
+    background-color: #BA0B13;
+    
+    overflow: hidden;
+}
+
+.contenedorFooter .row{
+    padding: 50px;
+}
+
+.contenedorFooter .row span{
+    color: #fff;
+    font-size: 54px;
+}
+
+.contenedorFooter .row .iconoWhatsapp{
+    color: #fff;
+    padding-right: 20px;
+}
+
+.columnaIconos{
+    text-align: center;
+}
+
+.columnaIconos a{
+    text-decoration: none;
+    padding: 7px;
+
+}
+
+.circulo{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.columnaIconos i{
+    margin: 0 auto;
+    font-size: 21px;
+    color: #BA0B13;
+    margin-top: 10px;
+}
+
+.columnaIconos .nombreCompania{
+    font-size: 18px !important;
+    background-color: #FAD3D5;
+    margin-top: 5px !important;
+}
+
+@media screen and (max-width:992px) {
+
+    .contenedorFooter .row span{
+        font-size: 45px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .contenedorFooter .centrarDivFooter{
+        text-align: center;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width:385px) {
+    .contenedorFooter .row span{
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,106 @@
+.contenendorFrecuentes h1{
+    color: #9F1319;
+    width: 43%;
+    overflow-y: hidden;
+    background-color: #FAD3D5;
+    text-transform: uppercase;
+}
+
+.contenendorFrecuentes .primerHr{
+    width: 12%;
+    margin-top: -3px;
+    border: 2px solid #BA0B13;
+    margin-bottom: 50px;
+}
+
+.contenendorFrecuentes .botonDrop{
+    width: 100%;
+    position: relative;
+}
+
+.contenendorFrecuentes .botonDrop button{
+    width: 100%;
+    background-color: rgba(238, 238, 238, 0);
+    border: 2px solid #E1E1E0;
+    padding: 7px 20px;
+    text-align: start;
+}
+
+.contenendorFrecuentes .botonDrop button .fondoMas{
+    float: right;
+    border: 1px solid #E1E1E0;
+    border-radius: 50%;
+    width: 30px;
+    height:30px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.contenendorFrecuentes .botonDrop button .fondoMas:hover{
+    border: 2px solid rgb(192, 192, 191);
+}
+
+.contenendorFrecuentes .botonDrop button i{
+    background: rgba(238, 238, 238, 0);
+    color: #BA0B13;
+    margin-top: 4px;
+    margin-right: 3px;
+    float: right;
+    font-size: 22px;
+}
+
+.contenendorFrecuentes .botonDrop ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #E1E1E0;
+}
+
+.contenendorFrecuentes .botonDrop ul li{
+    list-style: none;
+}
+
+.contenendorFrecuentes .botonDrop ul li a{
+    display: block;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid rgb(53, 53, 53);
+    font-size: 17px;
+}
+
+.contenendorFrecuentes .botonDrop ul li a:hover{
+    background-color: rgb(131, 131, 131); 
+}
+
+.contenedorTexto{
+    background-color: #F5F5F6;
+    font-size: 17px;
+    height: 110px;
+}
+
+.contenedorTexto a{
+    padding: 0 20px;
+    color: #000;
+    text-decoration: none;
+    background-color: #FAD3D5;
+}
+
+@media screen and (max-width:992px) {
+    .contenendorFrecuentes h1{
+        width: 100%;
+        overflow-y: unset;
+        text-align: center;
+    }
+
+    .contenendorFrecuentes .primerHr{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .contenendorFrecuentes h1{
+        font-size: 33px;
+    }
+}

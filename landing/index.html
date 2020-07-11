@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="">
+    <meta keywords="">
+    <title>Prueba Front-End</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Diferenciados por cada modulo permitiendo
+    facil integracion en un framework -->
+    <link rel="stylesheet" href="css/cabezera.css">
+    <link rel="stylesheet" href="css/descripcion.css">
+    <link rel="stylesheet" href="css/ubicacion.css">
+    <link rel="stylesheet" href="css/frecuentes.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Mapbox -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- mapbox js -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+    <!-- Librerias adicionales de bootstrap para el dropdown de preguntas sfrecuentes -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- script para manejar botones de preguntas frecuentes -->
+    <script src="js/main.js"></script>
+    <!-- Script para manejar el envio del formulario contactanos-->
+    <script src="js/envioFormulario.js"></script>
+    <!-- Script para manejar los botones del slider de descripcion-->
+    <script src="js/sliderImagenes.js"></script>
+
+</head>
+<body>
+    
+    <div class="container-fluid fondoFachada">
+        <!-- Traigo la imagen de fondo -->
+        <img src="img/177-Fachada 003 HD.png" class="imagenFondo">
+
+        <div class="caja-blanca">
+            <img src="img/logo.png" class="logoDefault">
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="caja-azul">
+            <!-- Imagen logo de company -->
+            <img src="img/logo2.png" alt="">
+            <!-- imagen del emoji -->
+            <img src="img/emoji.png" class="emojiFiesta">
+
+            <ol class="textoPrincipal">
+                <li class="FontItalic">
+                    <span>estamos de lanzamiento</span>
+                </li>
+                <li class="FontRegular">
+                    <span>conoce nuestro nuevo</span>
+                </li>
+                <li class="FontBold">
+                    <span>proyecto apto</span>
+                </li>
+                <li class="FontSemiBold">
+                    <span class="textNormal">En el Centro De Bogota | </span>
+                    <span>PROYECTO VIS</span>
+                </li>
+            </ol>
+
+            <button type="button" class="botonPrincipal FontBold">
+                PARTICIPAR
+            </button>
+
+        </div>
+
+        <iframe width="462" height="276" src="https://www.youtube.com/embed/IjXjgNDI9_g" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+        </iframe>
+
+    </div>
+
+    <div class="container-fluid contenedorLateral">
+        <div class="row tamañofila">
+            <div class="col-12 barraLateral">
+                <!-- Creo un nuevo contenedor para lgorar el espaciado a izq y der -->
+                <div class="container">
+                    <!-- creo una nueva fila flex con tamaño de 3, sirve si se vuelve responsive-->
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12">
+                            <section class="mt-3 seccion_de_apps">
+                                <!-- con bootstrap cambio a formato fila -->
+                                <p class="font-20 FontMedium d-inline">Ubicanos en: </p>
+                                <!-- en esta imagen tuve un rpoblema ya que no encontre
+                                el logo de waze como el de illustrator por lo cual tuve qu unirlas las
+                                dos pero se que esto no se debe hacer, solo fue porque no encontre el exacto -->
+                                <!-- <img src="img/appsLogo.png" class="d-inline"> -->
+                                <div class="logosApssUbicar">
+                                    <a href="https://www.waze.com/es" target="_blank">
+                                        <img src="img/logoWaze.png" alt="ubicanos en waze">
+                                    </a>
+                                    <a href="https://www.google.com/maps/" target="_blank" class="imagenMaps">
+                                        <img src="img/logoMaps.png" alt="ubicanos en mapas">
+                                    </a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <p class="font-20 FontSemiBold mt-4">Info Sala de Ventas:</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <p class="font-20 FontLight mt-3">Nombre Asesor</p>
+                            <p class="font-20 FontLight" style="margin-top:-20px">Telefono</p>
+                        </div>
+                        <div class="col-lg-3 col-sm-12">
+                            <p class="font-20 FontLight mt-3">Correo Electronico</p>
+                            <p class="font-20 FontLight" style="margin-top:-20px">Horarios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Seccion de descripcion----------------------- -->
+    <div class="container contenedorDescripcion">
+        <div class="row">
+            
+            <div class="col-lg-6 col-xs-12 centrarResponsive">
+                <h1 class="text-uppercase FontBold">descripción</h1>
+                <hr class="primerHr">
+
+                <a href="#" class="FontRegular font-18">
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                    cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó 
+                    una galería de textos y los mezcló de tal manera que logró hacer un libro de textos
+                    especimen.
+                    <!-- Doy un espaciado para tener el color como en la imagen -->
+                    <br>&nbsp;<br>
+
+                    No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en 
+                    documentos electrónicos, quedando esencialmente igual al original. 
+                </a> 
+            </div>
+
+            <div class="col-lg-6 col-xs-12 subir-10" id="contenedorImagen">
+
+                <section class="section">
+                    <input type="radio" name="icon" id="botonImagen1">
+                    <input type="radio" name="icon" id="botonImagen2">
+                    <input type="radio" name="icon" id="botonImagen3">
+
+                    <img class="imagenPrincipalSlide" src="img/sala1.png" id="img1">
+
+                    <section>
+                        <button class="ir-izquierda">
+                            <span><i class="fas fa-chevron-left fa-2x"></i></span>
+                        </button>
+                        <button class="ir-derecha">
+                            <span><i class="fas fa-chevron-right fa-2x"></i></span>
+                        </button>
+                    </section>
+                </section>
+
+            </div>
+
+            <!-- ------Especificaciones de la habitacion----------- -->
+
+            <div class="container mt-5 contenedorEspecificacionesHab">
+                <div class="row text-center">
+
+                    <div class="col-lg-4 col-sm-4 col-xs-12">
+                        <h2 class="FontBold">35 m</h2>
+                        <h3 class="FontLight">Area Departamento</h3>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-xs-12">
+                        <h2 class="FontBold">1</h2>
+                        <h3 class="FontLight">Baño</h3>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-xs-12">
+                        <h2 class="FontBold">1-2</h2>
+                        <h3 class="FontLight">Habitaciones</h3>
+                        <h4 class="FontLight">(Aplica subsidio)</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Seccion de ubicacion----------------------- -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <!-- Creo el titulo mediante pseudoselectores after before -->
+                <hr class='separador_post tituloUbicacion mb-5'/>
+                <!-- agrego mapa por medio de mapbox -->
+                <div id='map' style="height: 450px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Seccion de preguntas frecuentes----------------------- -->
+    
+    <div class="container mt-5 contenendorFrecuentes">
+        <div class="row">
+
+            <div class="col-12">
+                <h1>preguntas frecuentes</h1>
+                <hr class="primerHr">
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <!-- BOTON 1, cada bootn tiene su id diferente para mostrar su dropdwon -->
+                <div class="botonDrop FontBold font-20 mb-3">
+                    <button class="button" id="btn1">
+                        Lorem ipsum dolor sit amet.
+                        <div class="fondoMas">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </button>
+                    <div style="display:none" id="drop-menu">
+                        <ul>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- BOTON 2 -->
+                <div class="botonDrop FontBold font-20 mb-3">
+                    <button class="button" id="btn2">
+                        Lorem ipsum dolor sit amet.
+                        <div class="fondoMas">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </button>
+                    <div style="display:none" id="drop-menu2">
+                        <ul>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- BOTON 3 -->
+                <div class="botonDrop FontBold font-20 mb-3">
+                    <button class="button" id="btn3">
+                        Lorem ipsum dolor sit amet.
+                        <div class="fondoMas">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </button>
+                    <div style="display:none" id="drop-menu3">
+                        <ul>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- BOTON 4 -->
+                <div class="botonDrop FontBold font-20 mb-3">
+                    <button class="button" id="btn4">
+                        Lorem ipsum dolor sit amet.
+                        <div class="fondoMas">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </button>
+                    <div style="display:none" id="drop-menu4">
+                        <ul>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <!-- BOTON 5 -->
+                <div class="botonDrop FontBold font-20 mb-3">
+                    <button class="button" id="btn5">
+                        Lorem ipsum dolor sit amet.
+                        <div class="fondoMas">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </button>
+                    <div style="display:none" id="drop-menu5">
+                        <ul>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- BOTON 6 -->
+                <div class="botonDrop FontBold font-20 mb-3">
+                    <button class="button" id="btn6">
+                        Lorem ipsum dolor sit amet.
+                        <div class="fondoMas">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                    </button>
+                    <div id="drop-menu6">
+                        <ul>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                            <li><a href="#">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contenedorTexto FontLight">
+                    <br><a href="#">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloribus et placeat cupiditate quas, nobis veritatis quaerat officiis
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Seccion de contactanos----------------------- -->
+
+    <div class="container-fluid tamañoCompleto">
+        <div class="container contenedorContacto">
+            <div class="row">
+
+                <div class="col-12">
+                    <h4 class="FontBold text-center mt-5">¿Te gusto nuestro Nuevo Proyecto?</h4>
+                    <p class="text-center FontLight mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, in!
+                    </p>
+                </div>
+
+                <!-- Inicio del formulario -->
+                <form action="#" id="formEnviar" class="mb-5">
+
+                    <div class="d-inline">
+                        <input type="text" id="nombreFormulario" placeholder="Nombre">
+                        <input type="text" id="telefonoFormulario" placeholder="Telefono / Whatsapp">
+                        <input type="email" id="correoFormulario" placeholder="Correo Electronico">
+                    
+                        <div class="row mt-2">
+                        
+                            <div class="col-lg-1 col-xs-0"></div>
+
+                            <div class="col-lg-7 col-md-12 col-xs-12">
+                                <label class="FontLight textHorarioConexion" for="selector">
+                                    ¿A que hora desea ser contactado?</label>
+
+                                <select id="selector" required>
+                                    <option value="" selected disabled hidden>Seleccionar...</option>
+                                    <option value="1">lorem ipsum</option>
+                                    <option value="2">lorem ipsum</option>
+                                    <option value="3">lorem ipsum</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-xs-12 contenedorTerminos">
+                                <section class="aceptacionTerminos" required>
+                                    <input type="checkbox" name="terminos" id="terminos">
+                                    <label for="terminos">
+                                        Acepto los terminos de privacidad
+                                    </label>
+                                </section>
+                            </div>
+
+                            <div class="col-lg-12 col-md-7 col-xs-12 mt-3">
+                                <div class="alert alert-danger" id="alertaLlenarForm" role="alert">
+                                    Favor llene los datos completos del formulario
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-12 col-xs-6 enviarDatos">
+                                        <input type="submit" id="envioFormulario" value="ENVIAR" >
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    
+                </div>
+
+                </form>
+                <!-- Fin del formulario -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Seccion del footer----------------------- -->
+
+    <div class="container-fluid contenedorFooter" >
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-xs-12 centrarDivFooter">
+                <a href="#" target="_blank">
+                    <i class="fab fa-whatsapp fa-2x iconoWhatsapp"></i>
+                </a>
+                <span class="FontBlack">
+                    300 000 000
+                </span>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12 columnaIconos mt-3">
+
+                <a href="https://www.facebook.com/" target="_blank">
+                    <div class="circulo">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <div class="circulo">
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                    <div class="circulo">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/" target="_blank">
+                    <div class="circulo">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </div>
+                </a>
+
+                <br><span class="nombreCompania FontBold">Company</span>
+            </div>
+
+            <div class="col-lg-4 col-xs-0"></div>
+        </div>
+    </div>
+
+    
+    <!-- js para el mapbox, inclyo con el token propio y añado marcador -->
+    <script type="text/javascript">
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaGFyb2xkMjIyIiwiYSI6ImNrMWk2djlhNDFtejEzZG12dTh4YjRkZWQifQ._tkCay83oFzd0BTTdw4DDA';
+   
+        let map = new mapboxgl.Map({
+            container: 'map', // incluyo en el id mapa
+            style: 'mapbox://styles/mapbox/streets-v11', //estilo del mapa
+            center: [-74.5, 40], // posicion del mapa
+            zoom: 9 // xoom
+        });
+
+        let fondo = document.createElement('div');
+        fondo.className = 'fondoMarcador';
+
+        let marcador = document.createElement('div');
+        marcador.className = 'marcador';
+
+        let mark = new mapboxgl.Marker(marcador).setLngLat({
+            lng: -74.5,
+            lat: 40
+        }).addTo(map);
+        
+        let mark2 = new mapboxgl.Marker(fondo).setLngLat({
+            lng: -74.5,
+            lat: 40
+        }).addTo(map);
+    </script>
+
+</body>
+</html>

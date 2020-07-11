@@ -1,0 +1,91 @@
+hr.tituloUbicacion { 
+    text-align: center;
+}
+   
+hr.separador_post:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #9F1319;
+    border-width: 0 0 1px 0;
+}
+
+hr.separador_post:after {
+    content: 'UBICACIÓN ESTRATÉGICA';
+    color: #9F1319;
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0 55px;
+    background: white;
+}
+
+.fa-map-marker{
+    position: absolute;
+}
+
+.marcador{
+    background-image: url('../img/logoMarcador.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: -7px;
+    width: 60px;
+    height: 55px;
+    z-index: 2;
+
+}
+/* Estilos al marcador con el logo proporcionado */
+.fondoMarcador{
+    background-image: url("../img/marcador.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+
+}
+
+@media screen and (max-width:992px) {
+    hr.tituloUbicacion { 
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #map { 
+        margin-top: -50px;
+    }
+
+    hr.separador_post:before {
+        height: 0px;
+    }
+    
+    hr.separador_post:after {
+        padding: 0 0px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    hr.separador_post:after {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    hr.tituloUbicacion { 
+        margin-bottom: 50px;
+    }
+
+    #map { 
+        margin-top: 0 !important;
+    }
+}
+

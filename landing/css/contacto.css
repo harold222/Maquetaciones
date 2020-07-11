@@ -1,0 +1,140 @@
+.tamañoCompleto{
+    background-color: #F5F5F6;
+    margin-top: 40px !important;
+}
+
+.contenedorContacto{
+    margin-top: 30px;
+}
+
+.contenedorContacto form{
+    width: 100%;
+}
+
+.contenedorContacto h4{
+    color: #9f1319;
+}
+
+.contenedorContacto p{
+    font-size: 17px;
+}
+
+.contenedorContacto form input,
+.contenedorContacto form select{
+    width: 33%;
+    border: 1px solid #E0E0DF;
+    padding: 7px 10px;
+    color: #000;
+    font-weight: lighter;
+    font-size: 14px;
+    border-radius: 6px;
+
+}
+
+#selector{
+    width: 57%;
+}
+
+.contenedorContacto .textHorarioConexion{
+    margin-left: 52.4px;
+    width: 30%;
+}
+
+.contenedorContacto span{
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    float: right;
+    text-align: end;
+}
+
+.contenedorContacto label{
+    display: inline;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.contenedorContacto #terminos{
+    width: 5%;
+}
+
+.contenedorContacto .form-inline{
+    margin-top: -30px;
+}
+
+.contenedorContacto .enviarDatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorContacto .enviarDatos input{
+    background-color: #BA0B13;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 5px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+#alertaLlenarForm{
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 7px;
+    margin-bottom: 5px;
+
+    width: 32%;
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .contenedorContacto .textHorarioConexion{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .contenedorContacto form input,
+    .contenedorContacto form select{
+        width: 30%;
+    }
+
+    #selector{
+        width: 59%;
+    }
+
+    .contenedorTerminos{
+        margin-top: 10px;
+    }
+
+    .contenedorContacto .enviarDatos input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contenedorContacto form input,
+    .contenedorContacto form select{
+        width: 100%;
+        margin: 5px;
+    }
+
+    #selector{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .contenedorContacto form input,
+    .contenedorContacto form select{
+        width: 90%;
+    }
+
+    #selector{
+        width: 90%;
+    }
+}
+
