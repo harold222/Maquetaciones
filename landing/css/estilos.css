@@ -2,10 +2,7 @@
     /* Elimino margenes y padding por defecto */
     margin: 0; 
     padding: 0;
-    /* Cambio modelo de caja */
     box-sizing: border-box;
-    /* elimino posible scroll horizontal */
-    /* overflow-x: hidden; */
 }
 
 /* Importo las fuentes proporcioandas en el descargable, tambien

@@ -3,10 +3,7 @@
 .fondoFachada{
     /* total de la ventana de alto */
     height: 100vh;
-    /* escondo el sobrante de la imagen */
     overflow: hidden;
-    /* posiciono detras de los elementos */
-    z-index: -1;
 }
 
 .imagenFondo{
@@ -20,30 +17,34 @@
     filter: contrast(90%);
 }
 
-.caja-blanca{
-    /* brindo el tamaño de la caja superior del logo con el tamaño de illustrator */
-    width: 219.289px;
-    height: 180.992px;
-    /* fondo color blanco */
-    background-color: #ffffff;
-    /* para poder moverlo libremente */
-    position: absolute;
-    /* lo mantendo en la parte superior */
-    top:0;
-    /* posiciono al centro de la pagina */
-    left: 42.2%;
+.aux{
+    width: 98vw;
+    height: 0px;
+    position: relative;
+    z-index: 1;
 }
+
+.caja-blanca{
+    width: 219px;
+    height: 180px;
+    background-color: #ffffff;
+    margin: auto;
+    /* position: absolute;
+    top:0;
+    left: 20%; */
+}
+
 
 .logoDefault{
     /* centro la imagen en el contenedor blanco */
     display:block;
     margin:auto;
-    margin-top: 35px;
+    padding-top: 15px;
 }
 
 .caja-azul{
     width: 708.55px;
-    height: 231px;
+    padding: 5px 0px;
     /* color segun el indicado en illustrator */
     background-color: rgba(0, 75, 128, 0.815);
     /* bordeo el contenedor */
@@ -59,6 +60,8 @@
     /*posiciono el logo de company */
     margin-top: 20px;
     margin-left: 15px;
+
+    display: none;
 }
 
 .textoPrincipal{
@@ -66,11 +69,10 @@
     color: #ffffff;
     text-transform: uppercase;
 
-    position: absolute;
-    top: 16%;
-    left: 27.5%;
-    /* Elimino las viñetas de cada item */
+    position: relative;
     list-style: none;
+    padding: 7px;
+    
 }
 
 .textoPrincipal li span{
@@ -79,27 +81,27 @@
     padding: 0 3px;
 }
 
+.textoPrincipal li{
+    display: flex;
+}
+
 .textoPrincipal li:first-child{
     /* utilizo pseudo selector para cada li, cambiando asi su tamaño */
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .textoPrincipal li:nth-child(2){
-    margin-top: -12px;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .textoPrincipal li:nth-child(3){
-    margin-top: -18px;
-    font-size: 45px;
+    font-size: 25px;
 }
 
 .textoPrincipal li:last-child{
+    display: none;
     background-color: #0084B1;
     padding: 0 8px;
-    padding-right: 25px;
-    margin-top: -15px;
-    margin-left: 80px;
 }
 
 .textoPrincipal li:last-child span:first-child{
@@ -113,16 +115,14 @@
 }
 
 .botonPrincipal{
-    position: absolute;
     background-color: #B62122;
     border: 0px;
     color: white;
     padding: 4px 25px;
     border-radius: 8px;
     font-size: 18px;
-
-    top: 77%;
-    left: 72%;
+    display: block;
+    margin: auto;
 }
 
 .emojiFiesta{
@@ -135,9 +135,9 @@
 /* video de youtube-------------- */
 .fondoFachada iframe{
     position: absolute;
-    top: 38%;
-    right: 2.5%;
-
+    top: 65%;
+    width: 99%;
+    height: 200px;
     border-radius: 15px;
 }
 
@@ -148,13 +148,11 @@
 
 .contenedorLateral{
     background-color: #727276;
-    overflow-y: hidden;
-    width: 100%;
     height: 104px;
 }
 
 .tamañofila{
-    width: 99.88vw;
+    width: 100%;
 }
 
 .contenedorLateral p{
@@ -162,7 +160,6 @@
 }
 
 .seccion_de_apps p{
-    margin-left: -55px;
     padding-right: 7px;
 }
 
@@ -173,13 +170,14 @@
     display: inline-block;
 }
 
+
 .contenedorLateral .barraLateral .logosApssUbicar a img{
-    width: 48%;
+    width: 70px;
     transition: all 0.3s;
 }
 
 .contenedorLateral .barraLateral .logosApssUbicar a img:hover{
-    width: 45%;
+    width: 60px;
     filter: brightness(70%);
 }
 
@@ -188,6 +186,18 @@
     position: absolute;
     margin-top: -4px;
     padding-left: 2px;
+}
+
+.contenedorLateral .barraLateral .row .col-lg-3:nth-child(2){
+    display: none;
+}
+
+.contenedorLateral .barraLateral .row .col-lg-3:nth-child(3){
+    display: none;
+}
+
+.contenedorLateral .barraLateral .row .col-lg-3:nth-child(4){
+    display: none;
 }
 
 /* --------------------FIN PARTE SUPERIOR----------------------- */
@@ -212,33 +222,104 @@
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (min-width: 1000px) {
+    .seccion_de_apps p{
+        margin-left: -55px;
+    }
 
+    .contenedorLateral .barraLateral .row .col-lg-3:nth-child(1){
+        display: initial;
+    }
+    
+    .contenedorLateral .barraLateral .row .col-lg-3:nth-child(3){
+        display: initial;
+    }
+    
+    .contenedorLateral .barraLateral .row .col-lg-3:nth-child(4){
+        display: initial;
+    }
+    
     .caja-azul{
-        width: 75%;
-        height: 220px;
-        top: 33%;
+        padding: 20px 0px;
+    }
+
+    .caja-azul img{
+        display: initial;
+    }
+
+    .textoPrincipal{
+        /* margin-top: -22px; */
+        position: absolute;
+        top: 5%;
+        left: 27.5%;
+    }
+
+
+    .textoPrincipal li:first-child{
+        /* utilizo pseudo selector para cada li, cambiando asi su tamaño */
+        font-size: 22px;
+    }
+    
+    .textoPrincipal li:nth-child(2){
+        margin-top: -8px;
+        font-size: 28px;
+    }
+    
+    .textoPrincipal li:nth-child(3){
+        margin-top: -10px;
+        font-size: 45px;
+    }
+    
+    .textoPrincipal li:last-child{
+        background-color: #0084B1;
+        padding: 0 8px;
+        padding-right: 25px;
+        margin-top: -8px;
+        margin-left: 80px;
+        display: inherit;
+    }
+
+    .botonPrincipal{
+        position: absolute;
+        top: 77%;
+        left: 72%;
     }
 
     .fondoFachada iframe{
-        top: 67%;
-        left: 0;
-        width: 50%;
+        top: 45%;
+        right: 1%;
+        width: 40%;
         height: 32%;
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contenedorLateral .barraLateral .row .col-lg-3:nth-child(1){
+        display: initial;
     }
     
-    .contenedorLateral .barraLateral .logosApssUbicar{
-        width: 120px;
+    .contenedorLateral .barraLateral .row .col-lg-3:nth-child(3){
+        display: initial;
     }
     
-    .contenedorLateral .barraLateral .logosApssUbicar a img{
-        width: 43%;
+    .contenedorLateral .barraLateral .row .col-lg-3:nth-child(4){
+        display: initial;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .caja-azul{
+        width: 99%;
+        top: 33%;
     }
 
     .contenedorLateral .barraLateral .logosApssUbicar .imagenMaps{
         margin-top: 0px;
     }
 }
+
 
 /* responsive en el alto */
 
@@ -253,6 +334,3 @@
         margin-top: -180px;
     }
 }
-
-
-/* --------------------Fin Responsive Design----------------------- */
