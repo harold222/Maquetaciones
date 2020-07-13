@@ -1,11 +1,3 @@
-$telefono: 480px;
-$tablet: 768px;
-$pc: 992px;
-$desktop: 1200px;
-
-$amarillo: #FDDA3A;
-$negro: #2C2B29;
-$rosado: #F21E4E;
 
 @mixin telefono{
     @media only screen and (min-width: #{$telefono}){
@@ -26,7 +18,13 @@ $rosado: #F21E4E;
 }
 
 @mixin desktop{
-    @media only screen and (min-width: #{desktop}){
+    @media only screen and (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+@mixin height_device{
+    @media only screen and (max-width: #{$ancho-pantalla}){
         @content;
     }
 }

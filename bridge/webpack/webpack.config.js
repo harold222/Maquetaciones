@@ -90,18 +90,6 @@ module.exports = {
                 useShortDoctype: true
             }
         }),
-        new htmlWebpackPlugin({
-            filename: 'about.html',
-            template: './src/about.hbs',
-            minify: {
-                collapseWhitespace: false,
-                removeComments: false,
-                removeRedundantAttributes: true,
-                removeScriptTypeAttributes: true,
-                removeStyleLinkTypeAttributes: true,
-                useShortDoctype: true
-            }
-        }),
         new miniCss({
             filename: 'recursos/css/[name].min.css'
         }),

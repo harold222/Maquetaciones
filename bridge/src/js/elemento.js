@@ -1,14 +1,22 @@
 ExecuteEvents();
 
 function ExecuteEvents() {
-    document.addEventListener('DOMContentLoaded', iniciar);
-    
+    document.addEventListener("DOMContentLoaded", iniciar);
 }
 
 function iniciar() {
-    alert("primera");
-
-    const nestedArray = [1, 2, [3, 4]];
-    const flattened = nestedArray.flat();
-    console.log(flattened);
+  var swiper = new Swiper(".swiper-container", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 30,
+    effect: "fade",
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 }
