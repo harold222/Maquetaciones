@@ -1,5 +1,5 @@
 /node_modules
-/webpack
-/src
-/package-lock.json
-/postscss.config.js
+webpack/*
+src/*
+package-lock.json
+postscss.config.js
