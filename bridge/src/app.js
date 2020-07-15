@@ -7,21 +7,23 @@ require("./static/img/mudanza.jpg");
 require("./static/img/slide-1.jpg");
 require("./static/img/slide-2.jpg");
 require("./static/img/slide-3.jpg");
+require("./static/img/gps.svg");
 
     // slide-icon
     require("./static/img/slide-icon/1.png");
     require("./static/img/slide-icon/2.png");
     require("./static/img/slide-icon/3.png");
 
-    //targets
-    require("./static/img/target-icon/033-truck.png");
-    
+    // cards-icon
+    require("./static/img/cards-icon/4.png");
+    require("./static/img/cards-icon/5.png");
+    require("./static/img/cards-icon/033-truck.png");
 
 
 // Importaciones scss
 require("./styles/footer.scss");
 require("./styles/navigation.scss");
-require("./styles/cards.scss");
+require("./styles/sec1.scss");
 
 // Importaciones js
 require("./js/elemento");

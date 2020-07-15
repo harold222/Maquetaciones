@@ -19,4 +19,14 @@ function iniciar() {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  nav_fixed();
+}
+
+const nav_fixed = () => {
+  window.onscroll = function (){
+      const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+      let ul = document.querySelector('nav');
+      (scroll >= 100) ? ul.classList.add("nav_fixed") : ul.classList.remove("nav_fixed");
+  }
 }
