@@ -2,5 +2,155 @@
 @import '_main';
 
 footer{
+    width: 100%;
+    background-color: #2C2B29;
+    margin-top: 100px;
 
+    .files{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        padding: 60px 0px;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include pc{
+            flex-direction: row;
+        }
+
+        .column{
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 0px 40px;
+            margin-bottom: 30px;
+            
+            @include tablet{
+                padding: 0px 80px;
+            }
+
+            @include pc{
+                padding: 0;
+                margin-bottom: 0;
+            }
+
+            h1{
+                font-weight: 700;
+                padding-bottom: 15px;
+            }
+
+            p.desc_eps{
+                font-style: oblique;
+                font-size: 15px;
+            }
+
+            .social{
+                margin-top: 25px;
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                        padding: 7px;
+                        a{
+                            transition: color .3s;
+
+                            &:hover{
+                                color: $naranja;
+                            }
+                        }
+                    }
+                }
+            }
+
+            h3{
+                text-transform: capitalize;
+                font-weight: 700;
+            }
+
+            .enlaces{
+                margin-top: 25px;
+
+                ul{
+                    padding: 0;
+                    
+                    li{
+                        display: flex;
+                        flex-direction: column;
+
+                        list-style: none;
+                        margin-bottom: 10px;
+                        a{
+                            font-size: 16px;
+                            font-weight: bold;
+                            transition: color .3s;
+
+                            &:hover{
+                                color: $naranja;
+                            }
+                        }
+                    }
+                }
+            }
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+
+            .info{
+                margin-top: 25px;
+                p{
+                    font-weight: 700;
+                    font-style: oblique;
+                }
+
+                a.email{
+                    display: block;
+                    margin-bottom: 15px;
+                    font-size: 15px;
+                    transition: color .3s;
+
+                    &:hover{
+                        color: $naranja;
+                    }
+                }
+                
+                ul{
+                    li{
+                        a{
+                            font-size: 15px;
+                            transition: color .3s;
+
+                            &:hover{
+                                color: $naranja;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .files_two{
+        background-color: #555351;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        padding: 8px;
+
+        a{
+            text-decoration: none;
+            color: rgb(209, 209, 209);
+            transition: color .3s;
+            font-weight: 700;
+
+            &:hover{
+                color: $naranja;
+            }
+        }
+    }
 }

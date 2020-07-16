@@ -8,6 +8,9 @@ require("./static/img/slide-1.jpg");
 require("./static/img/slide-2.jpg");
 require("./static/img/slide-3.jpg");
 require("./static/img/gps.svg");
+require("./static/img/horario.jpg");
+require("./static/img/calidad.jpg");
+require("./static/img/global.jpg");
 
     // slide-icon
     require("./static/img/slide-icon/1.png");
@@ -18,6 +21,11 @@ require("./static/img/gps.svg");
     require("./static/img/cards-icon/4.png");
     require("./static/img/cards-icon/5.png");
     require("./static/img/cards-icon/033-truck.png");
+
+    // testimonials
+    require("./static/img/testimonial/person1.png");
+    require("./static/img/testimonial/person2.png");
+    require("./static/img/testimonial/person3.png");
 
 
 // Importaciones scss

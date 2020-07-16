@@ -5,6 +5,13 @@ function ExecuteEvents() {
 }
 
 function iniciar() {
+  slide_head();
+  slide_testimonials();
+  nav_fixed();
+  venobox();
+}
+
+const slide_head = () => {
   var swiper = new Swiper(".swiper-container", {
     slidesPerView: 1,
     loop: true,
@@ -19,8 +26,25 @@ function iniciar() {
       prevEl: ".swiper-button-prev",
     },
   });
+}
 
-  nav_fixed();
+const slide_testimonials = () => {
+  var swiper2 = new Swiper('.swiper-container-two', {
+    effect: 'flip',
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next-two',
+      prevEl: '.swiper-button-prev-two',
+    },
+  });
 }
 
 const nav_fixed = () => {
@@ -29,4 +53,12 @@ const nav_fixed = () => {
       let ul = document.querySelector('nav');
       (scroll >= 100) ? ul.classList.add("nav_fixed") : ul.classList.remove("nav_fixed");
   }
+}
+
+const venobox = () => {
+  $('.venobox').venobox({
+      border     : '8px',                             
+      bgcolor    : '#DDDDDD',                   
+      numeratio  : true                              
+  });
 }
