@@ -11,6 +11,9 @@ require("./static/img/gps.svg");
 require("./static/img/horario.jpg");
 require("./static/img/calidad.jpg");
 require("./static/img/global.jpg");
+require("./static/img/about.jpg");
+require("./static/img/muebles.jpg");
+require("./static/img/map.jpg");
 
     // slide-icon
     require("./static/img/slide-icon/1.png");
@@ -32,6 +35,9 @@ require("./static/img/global.jpg");
 require("./styles/footer.scss");
 require("./styles/navigation.scss");
 require("./styles/sec1.scss");
+require("./styles/about/about.scss");
+require("./styles/servicios/services.scss");
+require("./styles/contacto/contact.scss");
 
 // Importaciones js
 require("./js/elemento");

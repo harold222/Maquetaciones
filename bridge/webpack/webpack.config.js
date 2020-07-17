@@ -90,6 +90,45 @@ module.exports = {
                 useShortDoctype: true
             }
         }),
+        new htmlWebpackPlugin({
+            filename: 'about.html',
+            hash: true,
+            template: './src/about.hbs'
+            ,minify: {
+                collapseWhitespace: false,
+                removeComments: false,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            }
+        }),
+        new htmlWebpackPlugin({
+            filename: 'services.html',
+            hash: true,
+            template: './src/services.hbs'
+            ,minify: {
+                collapseWhitespace: false,
+                removeComments: false,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            }
+        }),
+        new htmlWebpackPlugin({
+            filename: 'contacto.html',
+            hash: true,
+            template: './src/contact.hbs'
+            ,minify: {
+                collapseWhitespace: false,
+                removeComments: false,
+                removeRedundantAttributes: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true
+            }
+        }),
         new miniCss({
             filename: 'recursos/css/[name].min.css'
         }),

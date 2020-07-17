@@ -1,5 +1,5 @@
 /node_modules
-webpack/*
-src/*
+/src
+/webpack
 package-lock.json
 postscss.config.js
